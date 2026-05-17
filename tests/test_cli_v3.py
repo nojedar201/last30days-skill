@@ -1,6 +1,7 @@
 # ruff: noqa: E402
 import json
 import io
+import shutil
 import tempfile
 import subprocess
 import sys
@@ -150,7 +151,6 @@ class CliV3Tests(unittest.TestCase):
         # f"~/{relative.as_posix()}" which forces forward slashes regardless
         # of host OS. On POSIX hosts this asserts the contract for
         # cross-platform safety; on Windows hosts it would fail without the fix.
-        import shutil
         real_home = Path.home()
         tmp_under_home = Path(tempfile.mkdtemp(prefix="l30d_save_path_", dir=str(real_home)))
         try:

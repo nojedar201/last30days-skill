@@ -197,7 +197,7 @@ def compute_save_path_display(save_dir: str, topic: str, suffix: str, emit: str)
         relative = raw.relative_to(home)
         return f"~/{relative.as_posix()}"
     except ValueError:
-        return str(raw)
+        return raw.as_posix()
 
 
 def read_synthesis_file(path: str) -> str:
