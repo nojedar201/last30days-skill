@@ -103,6 +103,9 @@ class RenderComparisonMultiTests(unittest.TestCase):
         self.assertIn("| Dimension | OpenAI | Anthropic | xAI |", rendered)
         # The narrative-lens axis is emitted as a scaffold row
         self.assertIn("| Setting the narrative? |", rendered)
+        # Fill instructions carry the scope + artifact gate (no verdicts for
+        # people/ownerless topics, no pitch from memory)
+        self.assertIn("never supply the pitch from memory", rendered)
         # Envelope scaffolding present
         self.assertIn("EVIDENCE FOR SYNTHESIS", rendered)
         self.assertIn("END OF last30days CANONICAL OUTPUT", rendered)

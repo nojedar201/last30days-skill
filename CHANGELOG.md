@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **Narrative lens for company / product / service topics.** Comparison tables gain a `Setting the narrative?` axis that judges whether each entity's community conversation is actually about what the entity *pitches* (its first-party positioning) or about something else — pricing, rivals, an incident, a ToS change. A new mandatory research step captures each entity's current stated positioning from first-party sources (homepage, docs, pricing) rather than from memory, and single-entity company runs get a `narrative-check` synthesis beat surfacing the same signal. The mismatch is the point: companies usually don't control their own conversation.
+- **Narrative lens for company / product / service topics.** Comparison tables gain a `Setting the narrative?` axis that judges whether each entity's community conversation is actually about what the entity *pitches* (its first-party positioning) or about something else — pricing, rivals, an incident, a ToS change. A new mandatory research step captures each entity's current stated positioning from first-party sources (homepage, docs, pricing) rather than from memory, and single-entity company runs get a `narrative-check` synthesis beat surfacing the same signal. The mismatch is the point: companies usually don't control their own conversation. The lens is scoped to entities with an identifiable first party (companies, products, services): people always get N/A — even founders whose companies would qualify — as do events, abstract concepts, and ownerless topics like Bitcoin, and verdicts require positioning fetched during the run, never from memory.
 
 ### Fixed
 

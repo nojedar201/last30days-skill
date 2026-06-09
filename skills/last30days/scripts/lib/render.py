@@ -571,8 +571,12 @@ def _render_comparison_scaffold(topic: str) -> list[str]:
         "what the entity itself pitches: start the cell with Yes / Partly / No / Unclear, then name the topic "
         "the community is ACTUALLY on, anchored to a real item (e.g. \"No - pitches uptime, but the top thread "
         "is friendly-fraud (323pt HN)\"). Use Unclear when evidence is thin or polluted with unrelated "
-        "brand-name matches; do NOT infer a verdict from vibes. Write N/A for entities with no public pitch "
-        "(people, abstract concepts). This scaffold matches the April 9 launch-video exemplar shape."
+        "brand-name matches; do NOT infer a verdict from vibes. Write N/A for entities with no public pitch: "
+        "people (always, even famous founders - the lens applies to companies and products, never persons), "
+        "events, abstract concepts, and ownerless topics with no authoritative first party (e.g. Bitcoin). "
+        "Only fill a verdict when the entity's first-party positioning was actually fetched during this "
+        "run's research; if it was not, write Unclear - never supply the pitch from memory. "
+        "This scaffold matches the April 9 launch-video exemplar shape."
     )
 
     return [
