@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Scheduled OSV-Scanner vulnerability-drift workflow scans repository lockfiles weekly and uploads SARIF results to GitHub code scanning, catching newly disclosed CVEs in the dependency tree even between PRs ([#571](https://github.com/mvanhorn/last30days-skill/issues/571))
+
 ## [3.8.0] - 2026-06-21
 
 ### Added
