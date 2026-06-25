@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.8.2] - 2026-06-25
+
 ### Added
 
 - Advisory Semgrep SAST scan runs on every push/PR as part of the Security workflow, catching source-level security bugs using Semgrep CE community rules ([#563](https://github.com/mvanhorn/last30days-skill/issues/563))
